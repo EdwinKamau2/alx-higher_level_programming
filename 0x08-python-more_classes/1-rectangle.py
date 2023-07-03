@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" is class that defines a rectangle """
+""" is an empty class Rectangle that defines a rectangle """
 
 
 class Rectangle:
@@ -17,7 +17,7 @@ class Rectangle:
 
     @property
     def height(self):
-        """ height
+        """height
         """
         return self.__height
 
@@ -40,13 +40,3 @@ class Rectangle:
         if value < 0:
             raise ValueError("height must be >= 0")
         self.__height = value
-
-    def area(self):
-        """ returns rectangle area"""
-        return self.__width * self.__height
-
-    def perimeter(self):
-        """ returns rectangle perimiter"""
-        if self.__width is 0 or self.__height is 0:
-            return 0
-        return self.__width * 2 + self.__height * 2
